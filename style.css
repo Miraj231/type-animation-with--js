@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:blue;
+}
+.container {
+    font-size: 25px;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_befor{
+    color: white;
+}
+.SPAN{
+    color: white;
+    margin-left: 5px;
+}
+.SPAN::after{
+    content: '';
+    border: 2px solid white;
+    margin-left: 5px;
+    animation: animate 0.7s infinite;
+    
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 100;
+    }
+}
